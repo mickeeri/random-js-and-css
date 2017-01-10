@@ -1,0 +1,65 @@
+html {
+  height: 100%;
+}
+
+h1, p {
+  color: #555459;
+}
+
+body, p, figure {
+  margin: 0;
+}
+
+body {
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #F9F9F9;
+}
+
+main {
+  padding: 20px 50px;
+}
+
+figure {
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  display: flex;
+  flex-basis: 500px;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+#photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  padding: 10px;
+  background: #eee;
+}
+
+.image-container img {
+
+}
+
+.text-container {
+  padding: 20px 15px;
+  flex-grow: 2;
+}
+
+.details-container {
+  border-left: 1px solid #eee;
+  margin: 20px 0;
+  padding: 0 15px;
+}
+
+.details-container a {
+  text-decoration: none;
+  color: #007ab8;
+  white-space: nowrap;
+}
+
+.details-container a:hover {
+  text-decoration: underline;
+}
