@@ -1,0 +1,38 @@
+h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.message {
+  cursor: default;
+  border: 1px solid #ebebeb;
+  margin-top: 10px;
+  padding: 10px;
+  width: 300px;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.message.in {
+  opacity: 1;
+}
+
+.selected {
+  border: 2px solid #4580d3;
+}
+
+button.add-message {
+  margin-top: 10px;
+  background:#5f69c2;
+  border: 1px solid #ebebeb;
+  text-align: center;
+  outline:0;
+  padding: 15px;
+  cursor:pointer;
+  max-width:200px;
+  color: #fff;
+}
+
+button.add-message:hover {
+  background: #787fc2;
+}
