@@ -1,0 +1,39 @@
+body {
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  display: flex;
+  background: #eee;
+}
+
+h1 {
+  margin: 20px 0 0 100px;
+  font-size: 40px;
+  color: #2a2929;
+}
+
+.menu {
+  background: #eee;
+  flex-grow: 1;
+  flex-basis: 500px;
+}
+
+.picture-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-basis: 900px;
+}
+
+figure {
+  margin: 0;
+  width: 300px;
+  height: 200px;
+}
+
+.picture {
+  margin: 0;
+}
+
+img {
+  width: inherit;
+  height: inherit;
+}
