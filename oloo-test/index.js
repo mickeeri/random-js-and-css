@@ -7,6 +7,19 @@ function ready(selector, whenReady) {
   }
 }
 
+// factory function
+const anotherPerson = (firstName, lastName) => {
+  this.firstName = firstName;
+  this.lastName = lastName;
+
+  return {
+    getFullName: () => {
+      console.log(this.firstName + ' ' + this.lastName);
+    },
+  };
+};
+
+// oloo object
 const person = {
   init: (firstName, lastName) => {
     this.firstName = firstName;
@@ -29,4 +42,8 @@ ready('#container', () => {
   };
 
   console.log(person1.greeting());
+
+  const person2 = Object.create(anotherPerson('Micke', 'Eriksson'));
+
+  person2.getFullName();
 });
